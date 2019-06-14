@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-crypho",
+  "version": "1.0.0",
+  "description": "Crypho eslint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Crypho/eslint-config-crypho.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crypho/eslint-config-crypho/issues"
+  },
+  "homepage": "https://github.com/Crypho/eslint-config-crypho#readme",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-unicorn": "^9.1.0"
+  }
+}
