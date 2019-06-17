@@ -16,6 +16,9 @@
     "url": "https://github.com/Crypho/eslint-config-crypho/issues"
   },
   "homepage": "https://github.com/Crypho/eslint-config-crypho#readme",
+  "scripts": {
+    "test": "eslint *.js"
+  },
   "peerDependencies": {
     "eslint": ">= 3"
   },

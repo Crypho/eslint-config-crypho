@@ -10,8 +10,21 @@ pool:
   vmImage: Ubuntu 16.04
 
 steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm ci
+      npm run test
+    env:
+      CI: 1
+    displayName: Run tests
+
   - task: Npm@1
     inputs:
       command: publish
       publishRegistry: useExternalRegistry
       publishEndpoint: npmjs
+    displayName: Publish to npmjs.org
