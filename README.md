@@ -4,15 +4,14 @@ This package contains the standard [eslint](https://eslint.org) configuration fo
 
 It exposes separate configurations:: one for normal usage and one for React projects.
 
-## Normal usage
 
-For non-React projects you only need to add `eslint-config-crypho` to your
+For Javascript projects you only need to add `crypho-code-style/recommended` to your
 `.eslintrc`:
 
 ```json
 {
   "extends": [
-    "eslint-config-crypho"
+    "crypho/recommended"
   ]
 }
 ```
@@ -25,22 +24,34 @@ This will enable the following rules:
 * Assume an ES6 environment
 * For test files also enable the `jest` and `node` environments.
 
-## React usage
+If you use Typescript you will also need to install some extra packages:
+
+```shell
+npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+```
+
+or
+
+```shell
+yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser --only=dev
+```
+
+### React
 
 For React using projects you can also enable a set of React-specific rules:
 
 ```json
 {
   "extends": [
-    "eslint-config-crypho",
-    "eslint-config-crypho/react"
+    "crypho/recommended",
+    "crypho/react",
   ]
 }
 ```
 
 This enables several rules:
 
-* For `*.jsx` files:
+* For `*.jsx` and `*.tsx` files:
 
   * Enable JSX parsing
   * Disable the `unicorn/filename-case` rule

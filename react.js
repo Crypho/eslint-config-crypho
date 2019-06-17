@@ -12,7 +12,7 @@ module.exports = {
   },
   "overrides": [
     {
-      "files": ["**/*.jsx"],
+      "files": ["**/*.jsx", "**/*.tsx"],
       "parserOptions": {
         "ecmaFeatures": {
           "jsx": true
@@ -21,6 +21,11 @@ module.exports = {
       "rules": {
         "unicorn/filename-case": "off",
       },
+      "settings": {
+        "react": {
+          "version": "detect",
+        }
+      }
     }
   ]
 }

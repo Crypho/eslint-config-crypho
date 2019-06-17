@@ -2,10 +2,7 @@
   "name": "eslint-config-crypho",
   "version": "1.0.0",
   "description": "Crypho eslint configuration",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "recommended.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Crypho/eslint-config-crypho.git"
@@ -26,5 +23,9 @@
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-unicorn": "^9.1.0"
+  },
+  "optionalDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2"
   }
 }

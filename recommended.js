@@ -22,6 +22,17 @@ module.exports = {
   },
   "overrides": [
     {
+      "files": ["**/**.ts", "**/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+      },
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+      ],
+    },
+    {
       "files": ["**/*.test.js", "src/setupTests.js"],
       "env": {
         "jest": true,
