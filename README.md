@@ -11,7 +11,7 @@ For Javascript projects you only need to add `@crypho` to your
 ```json
 {
   "extends": [
-    "@crypho"
+    "crypho"
   ]
 }
 ```
@@ -43,13 +43,11 @@ For React using projects you can also enable a set of React-specific rules:
 ```json
 {
   "extends": [
-    "@crypho/eslint-config/recommended",
-    "@crypho/eslint-config/react",
+    "crypho/recommended",
+    "crypho/react",
   ]
 }
 ```
-
-Please note that you must include the full `@crypho/eslint-config` package name now.
 
 This enables several rules:
 
