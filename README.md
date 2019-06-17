@@ -5,13 +5,13 @@ This package contains the standard [eslint](https://eslint.org) configuration fo
 It exposes separate configurations:: one for normal usage and one for React projects.
 
 
-For Javascript projects you only need to add `crypho-code-style/recommended` to your
+For Javascript projects you only need to add `@crypho` to your
 `.eslintrc`:
 
 ```json
 {
   "extends": [
-    "crypho/recommended"
+    "@crypho"
   ]
 }
 ```
@@ -43,11 +43,13 @@ For React using projects you can also enable a set of React-specific rules:
 ```json
 {
   "extends": [
-    "crypho/recommended",
-    "crypho/react",
+    "@crypho/eslint-config/recommended",
+    "@crypho/eslint-config/react",
   ]
 }
 ```
+
+Please note that you must include the full `@crypho/eslint-config` package name now.
 
 This enables several rules:
 

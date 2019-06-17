@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-crypho",
+  "name": "@crypho/eslint-config",
   "version": "1.0.0",
   "description": "Crypho eslint configuration",
   "main": "recommended.js",
