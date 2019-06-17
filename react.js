@@ -1,31 +1,26 @@
 module.exports = {
-  "extends": [
-    "plugin:react/recommended",
-    "prettier/react",
-  ],
-  "plugins": [
-    "react"
-  ],
-  "env": {
-    "es6": true,
-    "browser": true
+  extends: ["plugin:react/recommended", "prettier/react"],
+  plugins: ["react"],
+  env: {
+    es6: true,
+    browser: true
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["**/*.jsx", "**/*.tsx"],
-      "parserOptions": {
-        "ecmaFeatures": {
-          "jsx": true
+      files: ["**/*.jsx", "**/*.tsx"],
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
         }
       },
-      "rules": {
-        "unicorn/filename-case": "off",
+      rules: {
+        "unicorn/filename-case": "off"
       },
-      "settings": {
-        "react": {
-          "version": "detect",
+      settings: {
+        react: {
+          version: "detect"
         }
       }
     }
   ]
-}
+};

@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": [
+  extends: [
     "plugin:unicorn/recommended",
     "plugin:promise/recommended",
     "plugin:prettier/recommended",
@@ -8,36 +8,24 @@ module.exports = {
     "prettier/babel",
     "prettier/unicorn"
   ],
-  "plugins": [
-    "promise",
-    "unicorn",
-    "prettier",
-  ],
-  "parserOptions": {
-    "ecmaVersion": "2018",
-    "sourceType": "module",
+  plugins: ["promise", "unicorn", "prettier"],
+  parserOptions: {
+    ecmaVersion: "2018",
+    sourceType: "module"
   },
-  "env": {
-    "es6": true
+  env: {
+    es6: true
   },
-  "overrides": [
+  rules: {
+    "unicorn/prevent-abbreviations": 0
+  },
+  overrides: [
     {
-      "files": ["**/**.ts", "**/*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module",
-      },
-      "extends": [
-        "plugin:@typescript-eslint/recommended",
-      ],
-    },
-    {
-      "files": ["**/*.test.js", "src/setupTests.js"],
-      "env": {
-        "jest": true,
-        "node": true
+      files: ["**/*.test.js", "src/setupTests.js"],
+      env: {
+        jest: true,
+        node: true
       }
     }
   ]
-}
+};

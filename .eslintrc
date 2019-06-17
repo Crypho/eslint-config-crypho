@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "./recommended.js",
+  ],
+  "env": {
+    "node": true
+  }
+}
+
