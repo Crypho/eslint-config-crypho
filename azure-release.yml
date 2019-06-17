@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    exclude:
+      - "*"
+  tags:
+    include:
+      - v*
+
+pool:
+  vmImage: Ubuntu 16.04
+
+steps:
+  - task: Npm@1
+    inputs:
+      command: publish
+      publishRegistry: useExternalRegistry
+      publishEndpoint: npmjs
