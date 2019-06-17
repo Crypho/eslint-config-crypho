@@ -17,6 +17,8 @@ module.exports = {
     es6: true
   },
   rules: {
+    // This makes diffs smaller and easier to read
+    "comma-dangle": "always-multiline",
     "unicorn/prevent-abbreviations": 0
   },
   overrides: [
