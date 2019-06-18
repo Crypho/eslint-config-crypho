@@ -57,7 +57,7 @@ For React using projects you can also enable a set of React-specific rules:
 ```json
 {
   "extends": [
-    "crypho/recommended",
+    "crypho",
     "crypho/react",
   ]
 }
@@ -73,3 +73,22 @@ This enables several rules:
 * Assume a `browser` environment in all files
 * The recommended rules from [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
 * Enable the `prettier/react` rules
+
+
+## Command-line tools
+
+For packages containing *only* command-line tools you can use the `crypho/cli` ruleset:
+
+```json
+{
+  "extends": [
+    "crypho",
+    "crypho/cli",
+  ]
+}
+```
+
+This will:
+
+* assume the `node` environment
+* allow console statements
