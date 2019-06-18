@@ -6,9 +6,9 @@ module.exports = {
     browser: true,
   },
   globals: {
-    "require": false,
-    "process": false,
-    "global": false,
+    require: false,
+    process: false,
+    global: false,
   },
   parser: 'babel-eslint',
   overrides: [
