@@ -23,7 +23,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['src/setupTests.js', 'src/setupFilesAfterEnv.js', 'src/setupFilesAfterEnv.test.js' ],
+      files: ['src/setupTests.js', 'src/setupFilesAfterEnv.js', 'src/setupFilesAfterEnv.test.js'],
       rules: {
         'unicorn/filename-case': 'off',
       },
