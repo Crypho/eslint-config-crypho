@@ -65,6 +65,7 @@ For React using projects you can also enable a set of React-specific rules:
 
 This enables several rules:
 
+* Use Babel to parse files
 * For `*.jsx` and `*.tsx` files:
 
   * Enable JSX parsing
