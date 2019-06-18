@@ -23,7 +23,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.test.js', 'src/setupTests.js'],
+      files: ['src/setupTests.js', 'src/setupFilesAfterEnv.js', 'src/setupFilesAfterEnv.test.js' ],
+      rules: {
+        'unicorn/filename-case': 'off',
+      },
+    },
+    {
+      files: ['**/*.test.js', 'src/setupTests.js', 'src/setupFilesAfterEnv.js'],
       env: {
         jest: true,
         node: true,
