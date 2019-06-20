@@ -3,7 +3,7 @@ module.exports = {
   plugins: ['react', 'react-native', 'babel'],
   env: {
     es6: true,
-    'react-native/react-native': true
+    'react-native/react-native': true,
   },
   globals: {
     require: false,
