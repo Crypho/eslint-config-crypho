@@ -21,6 +21,7 @@ module.exports = {
       },
       rules: {
         'unicorn/filename-case': 'off',
+        'react-native/sort-styles': 'off',
       },
       settings: {
         react: {
