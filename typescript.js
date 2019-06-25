@@ -6,9 +6,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    '@typescript-eslint/no-non-null-assertion': false,
+    '@typescript-eslint/no-non-null-assertion': 0,
     // Typescript will almost always infer this correctly
-    '@typescript-eslint/explicit-function-return-type': false,
+    '@typescript-eslint/explicit-function-return-type': 0,
   },
   overrides: [
     {
