@@ -20,14 +20,9 @@ module.exports = {
     // This makes diffs smaller and easier to read
     'comma-dangle': ['error', 'always-multiline'],
     'unicorn/prevent-abbreviations': 0,
+    'unicorn/filename-case': 'off',
   },
   overrides: [
-    {
-      files: ['src/setupTests.js', 'src/setupFilesAfterEnv.js', 'src/setupFilesAfterEnv.test.js'],
-      rules: {
-        'unicorn/filename-case': 'off',
-      },
-    },
     {
       files: ['**/*.test.js', 'src/setupTests.js', 'src/setupFilesAfterEnv.js'],
       env: {
