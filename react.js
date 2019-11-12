@@ -19,9 +19,6 @@ module.exports = {
           jsx: true,
         },
       },
-      rules: {
-        'unicorn/filename-case': 'off',
-      },
       settings: {
         react: {
           version: 'detect',
