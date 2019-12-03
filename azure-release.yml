@@ -1,7 +1,9 @@
+pr: none
 trigger:
   branches:
     exclude:
       - "*"
+
   tags:
     include:
       - v*
