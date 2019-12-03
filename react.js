@@ -13,6 +13,13 @@ module.exports = {
   parser: 'babel-eslint',
   overrides: [
     {
+      files: ['**/*.test.jsx', '**/*.test.tsx'],
+      env: {
+        jest: true,
+        node: true,
+      },
+    },
+    {
       files: ['**/*.jsx', '**/*.tsx'],
       parserOptions: {
         ecmaFeatures: {
