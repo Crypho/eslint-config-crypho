@@ -31,7 +31,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.3",
     "crypho-prettier": "^1.0.2",
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-prettier": "^3.1.1",
