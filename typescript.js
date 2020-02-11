@@ -1,10 +1,9 @@
 module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: '2018',
-    sourceType: 'module',
-  },
+  plugins: [
+    '@typescript-eslint',
+  ],
   rules: {
     '@typescript-eslint/no-non-null-assertion': 0,
     // Typescript will almost always infer this correctly
