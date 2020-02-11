@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-crypho",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Crypho eslint configuration",
   "main": "recommended.js",
   "repository": {
