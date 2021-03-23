@@ -73,7 +73,6 @@ This enables several rules:
 
 * Assume a `browser` environment in all files
 * The recommended rules from [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-* Enable the `prettier/react` rules
 
 
 ## Command-line tools

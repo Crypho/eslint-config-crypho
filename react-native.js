@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'prettier/react', 'plugin:react-native/all'],
+  extends: ['plugin:react/recommended', 'plugin:react-native/all'],
   plugins: ['react', 'react-native', 'babel'],
   env: {
     es6: true,

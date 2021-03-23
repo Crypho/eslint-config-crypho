@@ -5,8 +5,6 @@ module.exports = {
     'plugin:prettier/recommended',
     'eslint:recommended',
     'prettier',
-    'prettier/babel',
-    'prettier/unicorn',
   ],
   plugins: ['promise', 'unicorn', 'prettier'],
   parserOptions: {
@@ -21,6 +19,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'unicorn/prevent-abbreviations': 0,
     'unicorn/filename-case': 'off',
+    'unicorn/no-null': 'off',
   },
   overrides: [
     {
